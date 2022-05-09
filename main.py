@@ -99,7 +99,9 @@ class ICD9PredCNN(nn.Module):
         x = F.softmax(self.fc1(x))
         return x
 
-        
+'''
+The driving function where control flow occurs
+''' 
 def processData():
     #PREPROCESS BEGIN
     print("PREPROCESS BEGIN")
@@ -186,6 +188,9 @@ def processData():
     print("TRAIN BEGIN")
     runModelTrainAndEval(xvals_train, xvals_test, yvals_train, yvals_test)
 
+'''
+The function that creates the model and trains it
+'''
 def runModelTrainAndEval(xvals_train, xvals_test, yvals_train, yvals_test):
     train_set = CustomDataset(xvals_train, yvals_train)
     test_set = CustomDataset(xvals_test, yvals_test)
@@ -241,6 +246,9 @@ def train(model, train_loader, test_loader, n_epochs, optimizer, criterion):
         p, r, f = eval(model, test_loader)
         print('Epoch: {} \t Validation p: {:.2f}, r:{:.2f}, f: {:.2f}'.format(epoch+1, p, r, f))
 
+'''
+Main function
+'''
 def main():
     processData()
     print("DONE")
