@@ -12,6 +12,7 @@ numpy==1.20.2
 pandas==1.3.5
 scikit_learn==1.0.2
 torch==1.11.0
+Python3==3.7.9 or higher
 
 ## Data Download Instruction 
 
