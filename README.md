@@ -3,9 +3,9 @@
 
 ## Applying Convolutional Neural Networks to Predict the ICD-9 Codes of Medical Records.
 
-##Link to Original Paper - https://pubmed.ncbi.nlm.nih.gov/33322566/
+## Link to Original Paper - https://pubmed.ncbi.nlm.nih.gov/33322566/
 
-##Requirements 
+## Requirements 
 The directory has a requirements.txt included, however for posterity these are the libraries needed
 
 numpy==1.20.2
@@ -13,7 +13,7 @@ pandas==1.3.5
 scikit_learn==1.0.2
 torch==1.11.0
 
-##Data Download Instruction 
+## Data Download Instruction 
 
 The original data for this project is not available for public use, therefore, MIMIC-3 data was used. The instructions for how to access the data are described on the MIMIC-3 data site. 
 
